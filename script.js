@@ -31,7 +31,7 @@ function showScore() {
 }
 
 function getSkinType(score) {
-  return Math.floor(score/7) + 1;
+  return Math.max(Math.ceil(score/6),1);
 }
 
 function romanize(number) {
